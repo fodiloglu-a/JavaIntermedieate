@@ -1,6 +1,9 @@
-import java.util.Scanner;
+package FreeExample;
 
-public class NoteCalculator {
+
+
+import java.util.Scanner;
+ public class NoteCalculator {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Nmax:");
@@ -12,12 +15,16 @@ public class NoteCalculator {
         double Nd= input.nextDouble();
 
 
+
         double up=Nmax-Nd;
         double base=Nmax-Nmin;
 
         double divide=up/base;
 
         double Average=(divide*3)+1;
+
+        double a=(((Nmax-Nd)/(Nmax-Nmin))*3)+1;
+
 
 
         System.out.println("Your Average="+Average);
