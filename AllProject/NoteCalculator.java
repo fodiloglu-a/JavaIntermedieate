@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class NoteCalculator {
+    //This Calculator for Germany note system.
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Nmax:");
