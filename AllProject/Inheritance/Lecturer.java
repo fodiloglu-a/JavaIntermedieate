@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Lecturer extends Akademician {
+public class Lecturer extends Academician {
     private String doorNo;
 
 

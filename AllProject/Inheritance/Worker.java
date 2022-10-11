@@ -24,9 +24,11 @@ public class Worker {
     public void setePost(String ePost) {this.ePost = ePost;    }
 
     //Inheritance Methot
+
+
     public  void enter(){
         System.out.println(this.name+" Enter University");
-    }
+    }//override
     public void exit(){
         System.out.println(this.name+" Exit University");
     }

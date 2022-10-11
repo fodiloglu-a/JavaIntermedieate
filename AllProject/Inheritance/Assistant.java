@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Assistant  extends Akademician{
+public class Assistant  extends Academician {
     public int officeHour;
     public Assistant(String name, String surname, String ePost, String episode, String title, int officeHour) {
         super(name, surname, ePost, episode, title);

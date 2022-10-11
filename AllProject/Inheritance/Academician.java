@@ -1,8 +1,8 @@
 package Inheritance;
-public  class Akademician extends  Worker {
+public  class Academician extends  Worker {
     private String episode;
     private String title;
-    public Akademician(String name, String surname, String ePost,String episode,String title) {
+    public Academician(String name, String surname, String ePost, String episode, String title) {
         super(name,surname,ePost);
         this.episode=episode;
         this.title=title;
@@ -30,9 +30,12 @@ public  class Akademician extends  Worker {
     public void setTitle(String title) {
         this.title = title;
     }
-
-    public  void enterLesson(){
+    @Override
+    public  void enter(){
         System.out.println("Enter Lesson");
+    }
+    public void exam(){
+        System.out.println(getName()+""+"exam creat");
     }
 }
 
