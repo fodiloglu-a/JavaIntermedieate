@@ -1,24 +1,41 @@
-package WarriorGame;
+package WarriorGame.CharacterWar;
+
+import WarriorGame.Armor.Armor;
+import WarriorGame.IMethots;
+import WarriorGame.Weapon.Weapon;
 
 public abstract  class CharacterWar implements IMethots {
 
     private  int damage;
     private int money;
     private int health;
+    private int defense;
+    private final int fullHealth=20;
 
     private  String charName;
+    private Armor armor;
+    private Weapon weapon;
 
-    public CharacterWar(String charName,int damage, int money, int health) {
+    public CharacterWar(String charName,int damage, int money, int health,int defense) {
         this.damage = damage;
         this.money = money;
         this.health = health;
         this.charName = charName;
+        this.defense=defense;
     }
     //Methods
-    @Override
-    public String selectChar(){
+
+    public String selectChar(int enterArmor,int enterWeapon){
         return null;
     }
+
+
+    public  void createChar(Armor armor,Weapon weapon){
+        this.armor=armor;
+        this.weapon=weapon;
+
+    }
+
 
 
 
@@ -26,6 +43,15 @@ public abstract  class CharacterWar implements IMethots {
 
 
     //GET UND SET METHOD
+
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
 
     public int getDamage() {
         return damage;
@@ -61,5 +87,15 @@ public abstract  class CharacterWar implements IMethots {
         this.charName = charName;
     }
 
+    public Armor getArmor() {
+        return armor;
+    }
 
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public int getFullHealth() {
+        return fullHealth;
+    }
 }

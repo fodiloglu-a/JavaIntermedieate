@@ -8,6 +8,7 @@ public class RentCarServis {
     static List <Car> carList;
 
     public RentCarServis(Costumer costumer) {
+        this();
         this.costumer=costumer;
 
         createCarRepo();
@@ -28,18 +29,15 @@ public class RentCarServis {
                     carCutomerType.add(car);
 
 
-                } else {
-                    carCutomerType.add(car);
                 }
+            }
+            if (costumer instanceof  Corporot){
+                carCutomerType.add(car);
+            }
+
+        }return  carCutomerType;
 
 
-
-
-            }return  carCutomerType;
-
-        }
-
-        return  carCutomerType;
     }
 
 
