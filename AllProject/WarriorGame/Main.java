@@ -169,7 +169,14 @@ public class Main {
             }while (a==0);a=0;
 
             Test test=new Test();
-            test.placeContinue(rever,vampire);
+            if (test.placeContinue(rever,vampire)==1){
+                fiht fiht=new fiht();
+                if (fiht.fightVampire(samurai,vampire)==1){
+                    System.out.println("Congratulations you are finish river place");
+                }else
+                    System.out.println("Next time");
+            }else
+                System.out.println("Next time");
             
             
 

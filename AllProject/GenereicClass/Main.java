@@ -1,7 +1,10 @@
 package GenereicClass;
 
+import Case_ListClass.ListClass;
+
 public class Main {
     public static void main(String[] args) {
+        ListClass listClass=new ListClass();
 
         String a=null;
         Integer b=null;
