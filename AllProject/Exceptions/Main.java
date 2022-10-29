@@ -19,18 +19,24 @@ public class Main {
         }
         finally {
             System.out.println("Program is finish");
+
         }
 
 
 
     }
 
-    public static void ageControl(int age) {
+    public static void ageControl(int age) throws AgeControlException{
         if (age<18){
-            throw new ArithmeticException(age+": is not possible");//Throw Exceptions
+            AgeControlException ex=new AgeControlException("null");
+            ex.loftExceeption();
+            throw new AgeControlException("Not");
+
         }
         System.out.println(age+": is possible");
 
 
     }
+
+    
 }
