@@ -1,9 +1,6 @@
 package MapHashMap;
 
 
-import WarriorGame.Armor.IceArmor;
-
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 
